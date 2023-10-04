@@ -10,6 +10,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+  margin-top: 2em;
+  margin-block-end: 0;
+}
+
 .todo-container {
   padding: 3em 2em 1em;
   max-width: 720px;
@@ -35,11 +40,14 @@ body {
   border: 0;
   border-radius: 20px 0 0 20px;
 }
+.form-row input:focus-visible {
+  outline: none;
+}
 
 .list {
   padding: 0;
 }
-.list span {
+.list p {
   color: #BCA37F;
   font-style: italic;
 }

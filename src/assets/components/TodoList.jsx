@@ -3,7 +3,7 @@ import { TodoItem } from "./TodoItem"
 export function TodoList({ todos, toggleTodo, deleteTodo }) {
     return (
         <ul className='list'>
-        <span>{todos.length === 0 && "List is empty"}</span>
+        <p>{todos.length === 0 && "List is empty"}</p>
         {todos.map(todo => {
           return (
             <TodoItem 
