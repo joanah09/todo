@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+body {
+  color: #113946;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-container {
+  padding: 3em 2em 1em;
+  max-width: 720px;
+  margin: 0 auto;
+  background: #FFF2D8;
+  border-radius: 10px;
+}
+.todo-inner-container  {
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+.form-row {
+  margin-top: 1em;
+}
+.form-row input {
+  height: 40px;
+  width: 100%;
+  max-width: 495px;
+  padding: 0 1em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  border: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+.list {
+  padding: 0;
+}
+.list span {
+  color: #BCA37F;
+  font-style: italic;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.list label {
+  padding: 0 5px;
+  color: #113946;
+  font-size: 19px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label {
+  color: #BCA37F;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.new-item-form label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+.add-btn {
+  padding: 0 2em;
+  height: 40px;
+  background: #EAD7BB;
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  font-weight: 700;
+  color: #113946;
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+.delete-btn svg {
+  height: 13px;
+  width: auto;
+}
+
+.delete-btn svg path {
+  fill: #113946;
+  transition: 0.2s all;
+}
+.delete-btn:hover svg path {
+  fill: #C70039;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .add-btn {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0 0 20px 20px;
+
+  }
+  .form-row input {
+    padding: 0;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    text-indent: 20px;
+  }
+}
