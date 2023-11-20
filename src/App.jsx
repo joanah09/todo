@@ -46,7 +46,7 @@ function deleteTodo(id) {
 }
 
 return (
-    <section class="todo-container">
+    <section className="todo-container">
       <NewTodoForm onSubmit={addTodo} />
       <div className='todo-inner-container'>
         {todos.length === 0 ? null : <h2>Todo List</h2>}

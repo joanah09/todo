@@ -6,12 +6,13 @@
   padding: 2rem;
 }
 body {
-  color: #113946;
+  /* color: #113946; */
+  color: #FF8551;
   font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-block-end: 0;
 }
 
@@ -33,10 +34,10 @@ h2 {
 .form-row input {
   height: 40px;
   width: 100%;
-  max-width: 495px;
+  max-width: 494px;
   padding: 0 1em;
   font-family: 'Poppins', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   border: 0;
   border-radius: 20px 0 0 20px;
 }
@@ -57,17 +58,29 @@ h2 {
 }
 .list label {
   padding: 0 5px;
-  color: #113946;
+  /* color: #113946; */
+  color: #FF8551;
   font-size: 19px;
+}
+
+input.content-label {
+  width: 100%;
+  margin-right: 10px;
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  border: 1px solid #FF8551;
+  border-radius: 15px;
 }
 
 input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"]:checked + label {
-  color: #BCA37F;
+  color: #c9a595;
   text-decoration: line-through;
   font-style: italic;
+  line-break: anywhere;
 }
 
 .new-item-form label {
@@ -78,14 +91,26 @@ input[type="checkbox"]:checked + label {
 button {
   font-family: 'Poppins', sans-serif;
 }
+
 .add-btn {
+  position: relative;
+  top: -2px;
   padding: 0 2em;
   height: 40px;
-  background: #EAD7BB;
-  border: 0;
+  background: #FF8551;
+  /* border: 1px solid #FF8551; */
+  border: 1px solid;
   border-radius: 0 20px 20px 0;
   font-weight: 700;
-  color: #113946;
+  color: #FFDEDE;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.add-btn:hover {
+  background: #FFDEDE;
+  color: #FF8551;
 }
 
 .delete-btn {
@@ -102,13 +127,28 @@ button {
 }
 
 .delete-btn svg path {
-  fill: #113946;
+  fill: #FF8551;
   transition: 0.2s all;
 }
 .delete-btn:hover svg path {
-  fill: #C70039;
+  fill: #eb0043;
 }
 
+.edit-btn {
+  padding: 0 1.5em;
+  cursor: pointer;
+  color: #FFDEDE;
+  background: #FF8551;
+  border: 1px solid #FF8551;
+  border-radius: 15px;
+  padding: 0 1.5em;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #FFDEDE;
+  color: #FF8551;
+}
 
 @media only screen and (max-width: 767px) {
   .add-btn {

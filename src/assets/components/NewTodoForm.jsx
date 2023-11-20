@@ -20,7 +20,7 @@ export function NewTodoForm({ onSubmit }) {
             onChange={e => setNewItem(e.target.value)} 
             value={newItem}
             ref={inputRef} />
-            <button className="add-btn">ADD</button>
+            <button className="add-btn">add</button>
           </div>
       </form>
     )
