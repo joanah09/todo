@@ -23,9 +23,7 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo, editTod
                 setTempEditedTitle("");
             }
         };
-
         document.addEventListener("click", handleClickOutside);
-
         return () => {
             document.removeEventListener("click", handleClickOutside);
         };

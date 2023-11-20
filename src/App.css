@@ -152,6 +152,18 @@ button {
 }
 
 @media only screen and (max-width: 767px) {
+  #root {
+    padding: 2em 0;
+  }
+  .todo-container {
+    padding: 3em 1.2em 1em;
+  }
+  .list label {
+    font-size: 17px;
+  }
+  input.content-label {
+    font-size: 14px;
+  }
   .add-btn {
     width: 100%;
     max-width: 600px;
